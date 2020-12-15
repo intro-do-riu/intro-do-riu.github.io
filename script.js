@@ -1,5 +1,5 @@
 async function run() {
-  const response = await fetch('assets/config.json');
+  const response = await fetch('config.json');
   const json = await response.json();
   Object.entries(json).forEach(([key, value]) => {
     const el = document.querySelector(`#${key}`);
